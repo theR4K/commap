@@ -1,0 +1,26 @@
+<div class="map_container">
+  <agm-map
+    [latitude]="lat"
+    [longitude]="lng"
+    [disableDefaultUI]="true"
+    (mapClick)="mapClicked($event)"
+    (mapReady)="onMapReady($event)"
+    (boundsChange)="boundsChange($event)"
+    (zoomChange)="zoomChange($event)">
+
+    <agm-marker *ngFor="let m of meets; let i = index"
+                (markerClick)="clickedMarker(i)"
+                [latitude]="m.location.coordinates[0]"
+                [longitude]="m.location.coordinates[1]"
+                [label]="m.name[0..2]">
+
+      <agm-info-window>
+        <p>{{m.name}}</p>
+        <p>{{m.subject || 'no subject'}}</p>
+        <p>{{m.state}}</p>
+        <p>{{m.startTime | date:'M/d/yy, H:mm'}}</p>
+      </agm-info-window>
+
+    </agm-marker>
+  </agm-map>
+</div>

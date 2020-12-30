@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "commap", "commap\commap.csproj", "{7636817B-73B4-4433-B453-9CA6A8C48538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "meetCreationModule", "meetCreationModule\meetCreationModule.csproj", "{BA8EC24F-CAF1-4416-92C3-E6ACC2CA5ED4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "meetCreationModule", "meetCreationModule\meetCreationModule.csproj", "{BA8EC24F-CAF1-4416-92C3-E6ACC2CA5ED4}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "commapModels", "commapModels\commapModels.shproj", "{2ADAC345-AD52-43FB-9E9C-345ADA05308A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "commapCli", "commapCli\commapCli.csproj", "{56DBE811-5C0E-4C40-B783-01225184862D}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -28,6 +30,10 @@ Global
 		{BA8EC24F-CAF1-4416-92C3-E6ACC2CA5ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA8EC24F-CAF1-4416-92C3-E6ACC2CA5ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA8EC24F-CAF1-4416-92C3-E6ACC2CA5ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DBE811-5C0E-4C40-B783-01225184862D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DBE811-5C0E-4C40-B783-01225184862D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DBE811-5C0E-4C40-B783-01225184862D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DBE811-5C0E-4C40-B783-01225184862D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

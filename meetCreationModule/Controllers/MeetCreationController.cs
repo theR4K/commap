@@ -32,6 +32,8 @@ namespace meetCreationModule.Controllers
         [HttpPost]
         public ActionResult<Meet> Post(Meet meet)
         {
+            if (meet.EndTime <= meet.StartTime)
+                return BadRequest();
             _meetCreationService.Create(meet);
 
             return meet;

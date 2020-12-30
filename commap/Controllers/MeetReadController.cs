@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using commap.Services;
+using commapModels.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,36 +12,19 @@ namespace commap.Controllers
     [ApiController]
     public class MeetReadController : ControllerBase
     {
+
+        private readonly MeetReadService _meetService;
+
+        public MeetReadController(MeetReadService service)
+        {
+            _meetService = service;
+        }
         // GET: api/<MeetReadController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ActionResult<List<Meet>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _meetService.Get();
         }
 
-        // GET api/<MeetReadController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<MeetReadController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<MeetReadController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<MeetReadController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

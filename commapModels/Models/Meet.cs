@@ -31,7 +31,8 @@ namespace commapModels.Models
         [DefaultValue(-1)]
         public int MaxMembers { get; set; }
 
-        [JsonIgnore] //used to not allow changing by client //!!
+        //[JsonIgnore] //used to not allow changing by client //!!
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate)]
         [DefaultValue(MeetState.planned)]
         public MeetState State { get; set; }
     }
@@ -39,8 +40,8 @@ namespace commapModels.Models
     public enum MeetState : Int32
     {
         deleted = -1,
-        planned = 0,
-        active = 1,
-        ended = 2
+        ended = 0,
+        planned = 1,
+        active = 2
     }
 }
