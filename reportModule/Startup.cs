@@ -9,11 +9,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.Logging;
 using commapModels.Models;
-using commap.Services;
+using reportModule.Services;
+using Microsoft.Extensions.Options;
 
-namespace commap
+namespace reportModule
 {
     public class Startup
     {

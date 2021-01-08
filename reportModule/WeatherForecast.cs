@@ -1,6 +1,6 @@
 using System;
 
-namespace commap
+namespace reportModule
 {
     public class WeatherForecast
     {

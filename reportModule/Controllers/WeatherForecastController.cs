@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace commap.Controllers
+namespace reportModule.Controllers
 {
     [ApiController]
     [Route("[controller]")]

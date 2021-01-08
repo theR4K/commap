@@ -2,6 +2,7 @@
 using commapModels.Models;
 using MongoDB.Driver;
 using FluentScheduler;
+using meetCreationModule.Models;
 
 namespace meetCreationModule.Services
 {

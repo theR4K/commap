@@ -13,10 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "commapCli", "commapCli\comm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheFinalLoadTest", "TheFinalLoadTest\TheFinalLoadTest.csproj", "{7CBB0A1D-3619-4C69-8529-17825C86B7BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reportModule", "reportModule\reportModule.csproj", "{B15AAC93-9385-436A-AD56-1A73DDD4BB42}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		commapModels\commapModels.projitems*{2adac345-ad52-43fb-9e9c-345ada05308a}*SharedItemsImports = 13
 		commapModels\commapModels.projitems*{7636817b-73b4-4433-b453-9ca6a8c48538}*SharedItemsImports = 5
+		commapModels\commapModels.projitems*{b15aac93-9385-436a-ad56-1a73ddd4bb42}*SharedItemsImports = 5
 		commapModels\commapModels.projitems*{ba8ec24f-caf1-4416-92c3-e6acc2ca5ed4}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +43,10 @@ Global
 		{7CBB0A1D-3619-4C69-8529-17825C86B7BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CBB0A1D-3619-4C69-8529-17825C86B7BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CBB0A1D-3619-4C69-8529-17825C86B7BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B15AAC93-9385-436A-AD56-1A73DDD4BB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B15AAC93-9385-436A-AD56-1A73DDD4BB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B15AAC93-9385-436A-AD56-1A73DDD4BB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B15AAC93-9385-436A-AD56-1A73DDD4BB42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

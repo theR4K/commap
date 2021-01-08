@@ -11,6 +11,6 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Models\DatabaseSettings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\IDatabaseSettings.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\Meet.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\IMeet.cs" />
   </ItemGroup>
 </Project>

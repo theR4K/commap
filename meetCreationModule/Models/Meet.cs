@@ -1,14 +1,16 @@
 ﻿using System;
+using commapModels.Models;
 using MongoDB.Bson;
-using MongoDB.Entities;
 using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Entities;
 using Newtonsoft.Json;
 using System.ComponentModel;
 
-namespace commapModels.Models
+namespace meetCreationModule.Models
 {
-    public class Meet
+    public class Meet: IMeet
     {
+        [JsonIgnore]
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; }
@@ -31,17 +33,9 @@ namespace commapModels.Models
         [DefaultValue(-1)]
         public int MaxMembers { get; set; }
 
-        //[JsonIgnore] //used to not allow changing by client //!!
+        [JsonIgnore] //used to not allow changing by client
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate)]
         [DefaultValue(MeetState.planned)]
         public MeetState State { get; set; }
-    }
-
-    public enum MeetState : Int32
-    {
-        deleted = -1,
-        ended = 0,
-        planned = 1,
-        active = 2
     }
 }

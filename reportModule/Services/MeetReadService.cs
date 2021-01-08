@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
-using commap.Models;
 using commapModels.Models;
+using reportModule.Models;
 using MongoDB.Driver;
+using MongoDB.Bson;
 
-namespace commap.Services
+namespace reportModule.Services
 {
     public class MeetReadService
     {
@@ -19,7 +20,12 @@ namespace commap.Services
 
         public List<Meet> Get()
         {
-            return _meets.FindSync<Meet>(meet => meet.State > MeetState.ended).ToList();
+            return _meets.FindSync(Meet => true).ToList();
+        }
+
+        public List<Meet> Get(FilterDefinition<Meet> filter)
+        {
+            return _meets.FindSync(filter).ToList();
         }
     }
 }
